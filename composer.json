@@ -10,7 +10,7 @@
     "require" : {
         "php" : ">=5.4",
         "ext-pcntl" : "*",
-        "symfony/console" : "~2.3",
+        "symfony/console" : "~2.3||~3.0",
         "symfony/framework-bundle" : ">=2.3"
     },
     "require-dev" : {
