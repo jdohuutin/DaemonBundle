@@ -1,9 +1,9 @@
 <?php
 namespace M6Web\Bundle\DaemonBundle\DependencyInjection;
 
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 
 class M6WebDaemonExtension extends Extension

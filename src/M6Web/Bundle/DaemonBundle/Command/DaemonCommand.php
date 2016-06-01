@@ -2,13 +2,13 @@
 
 namespace M6Web\Bundle\DaemonBundle\Command;
 
+use M6Web\Bundle\DaemonBundle\DaemonEvents;
+use M6Web\Bundle\DaemonBundle\Event\DaemonEvent;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use M6Web\Bundle\DaemonBundle\Event\DaemonEvent;
-use M6Web\Bundle\DaemonBundle\DaemonEvents;
 
 
 /**
@@ -340,7 +340,7 @@ abstract class DaemonCommand extends ContainerAwareCommand
      * @throws \InvalidArgumentException
      * @return $this
      */
-    public function setCode($callback)
+    public function setCode(callable $callback)
     {
         if (!is_callable($callback)) {
             throw new \InvalidArgumentException('Invalid callable provided to Command::setCode.');

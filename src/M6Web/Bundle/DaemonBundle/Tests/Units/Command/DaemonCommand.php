@@ -2,11 +2,11 @@
 
 namespace M6Web\Bundle\DaemonBundle\Tests\Units\Command;
 
+use M6Web\Bundle\DaemonBundle\DaemonEvents;
 use mageekguy\atoum\test;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use M6Web\Bundle\DaemonBundle\DaemonEvents;
 
 class DaemonCommand extends test
 {

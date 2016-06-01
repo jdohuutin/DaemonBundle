@@ -2,8 +2,8 @@
 
 namespace M6Web\Bundle\DaemonBundle\Event;
 
-use Symfony\Component\EventDispatcher\Event;
 use M6Web\Bundle\DaemonBundle\Command\DaemonCommand;
+use Symfony\Component\EventDispatcher\Event;
 
 /**
  * DaemonEvent
